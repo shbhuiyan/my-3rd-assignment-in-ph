@@ -33,9 +33,9 @@
 </head>
 <body class="font-manrope pt-4">
 
-    <!-- header section start here -->
-    <header class="lg:max-w-screen-2xl w-11/12 mx-auto bg-gradient-to-t from-white to-transparent">
-        <!-- navbar start here -->
+<!-- header section start here -->
+    <header class="lg:max-w-screen-2xl w-11/12 mx-auto bg-gradient-to-t from-white to-transparent mb-24">
+<!-- navbar start here -->
         <nav class="flex items-center justify-between">
             <!-- nav-right -->
                 <div class="flex items-center gap-1">
@@ -43,7 +43,7 @@
                     <a href="#"><h3 class="capitalize font-extrabold text-3xl">Rinterio</h3></a>
                 </div>
             <!-- nav-middle -->
-                <div>
+                <div class="hidden lg:block">
                     <ul class="flex items-center gap-8 capitalize text-gray-500 font-semibold">
                         <li class="hover:text-black"><a href="#">Home</a></li>
                         <li class="hover:text-black"><a href="#">Services</a></li>
@@ -54,12 +54,37 @@
                 </div>
             <!-- nav-left -->
             <div class="flex items-center gap-5">
-                <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2"><i class="fa-solid fa-magnifying-glass text-gray-500 hover:text-black"></i></div></a>
-                <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2 "><i class="fa-solid fa-cart-shopping text-gray-500 hover:text-black"></i></div></a>
-                <button class="flex items-center gap-2 py-2 px-4 rounded-full border-none capitalize text-black text-xl font-extrabold bg-arrow_bg">Book Consult<div class="bg-black text-white rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+                <div class="hidden sm:flex items-center gap-5">
+                    <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2"><i class="fa-solid fa-magnifying-glass text-gray-500 hover:text-black"></i></div></a>
+                    <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2 "><i class="fa-solid fa-cart-shopping text-gray-500 hover:text-black"></i></div></a>
+                    <button class="flex items-center gap-2 py-2 px-4 rounded-full border-none capitalize text-black text-xl font-extrabold bg-arrow_bg">Book Consult<div class="bg-black text-white rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+                </div>
+                <!-- hambar icon -->
+                <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+                    <div class="border-2 px-3.5 py-2 rounded-full"><i class="fa-solid fa-bars"></i></div>
+                    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
+<!-- banner section start here -->
+    <div class="hero md:p-10">
+        <div class="hero-content text-center">
+          <div class="max-w-5xl space-y-6">
+            <div class="w-full mb-8"><img class="mx-auto" src="./assets/banner.png" alt=""></div>
+            <h1 class="text-6xl font-extrabold capitalize text-black">A barn house of this design has a striking appearance</h1>
+            <p class="py-6 capitalize text-gray-600 max-w-4xl mx-auto">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+            </p>
+            <button class="max-sm:w-full flex items-center justify-center gap-2 py-2 px-4 rounded-full border-2 border-lime-300 capitalize text-black text-xl font-extrabold bg-lime-200 mx-auto">View Details<div class="bg-lime-600 text-white rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+          </div>
+        </div>
+    </div>
     </header>
 
     <main>
