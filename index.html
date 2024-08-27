@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
     <link rel="shortcut icon" href="./assets/home fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="vanilla.css">
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,20 +24,44 @@
                     manrope:"Manrope"
                 },
               colors: {
-                clifford: '#da373d',
+                arrow_bg:"rgba(171, 239, 95, 1)",
               }
             }
           }
         }
       </script>
-
 </head>
-<body class="font-manrope">
+<body class="font-manrope pt-4">
 
-    <header>
+    <!-- header section start here -->
+    <header class="lg:max-w-screen-2xl w-11/12 mx-auto bg-gradient-to-t from-white to-transparent">
+        <!-- navbar start here -->
+        <nav class="flex items-center justify-between">
+            <!-- nav-right -->
+                <div class="flex items-center gap-1">
+                    <a href="#"><div class="bg-arrow_bg rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></a>
+                    <a href="#"><h3 class="capitalize font-extrabold text-3xl">Rinterio</h3></a>
+                </div>
+            <!-- nav-middle -->
+                <div>
+                    <ul class="flex items-center gap-8 capitalize text-gray-500 font-semibold">
+                        <li class="hover:text-black"><a href="#">Home</a></li>
+                        <li class="hover:text-black"><a href="#">Services</a></li>
+                        <li class="hover:text-black"><a href="#">Portfolio</a></li>
+                        <li class="hover:text-black"><a href="#">Blogs</a></li>
+                        <li class="hover:text-black"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            <!-- nav-left -->
+            <div class="flex items-center gap-5">
+                <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2"><i class="fa-solid fa-magnifying-glass text-gray-500 hover:text-black"></i></div></a>
+                <a href="#"><div class="bg-white rounded-full px-2 py-1 border-2 "><i class="fa-solid fa-cart-shopping text-gray-500 hover:text-black"></i></div></a>
+                <button class="flex items-center gap-2 py-2 px-4 rounded-full border-none capitalize text-black text-xl font-extrabold bg-arrow_bg">Book Consult<div class="bg-black text-white rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+            </div>
+        </nav>
 
     </header>
-    
+
     <main>
 
     </main>
