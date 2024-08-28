@@ -93,7 +93,7 @@
 <!-- content section start here -->
     <main>
 <!-- 1st part in main section -->
-        <section class="bg-main_bg py-24 mb-24">
+        <section class="bg-main_bg py-24">
 <!-- about section start here -->
             <div class="lg:max-w-screen-2xl w-11/12 mx-auto mb-24">
                 <div class="space-y-3 xl:w-5/6 mx-auto">
@@ -175,8 +175,57 @@
             </div>
         </section>
 <!-- challenge part section start here -->
-        <section>
+        <section class="py-24">
+            <div class="lg:max-w-screen-2xl w-11/12 mx-auto space-y-10">
+        <!-- text part -->
+                <div class="md:w-2/3 lg:w-1/2 text-center space-y-4 mx-auto">
+                    <button class="flex items-center gap-2 py-2 px-4 rounded-full border-none capitalize text-gray-700 font-semibold bg-green-200 bg-opacity-30 border-2 drop-shadow-sm mx-auto"><i class="fa-solid fa-arrow-right"></i>Explore our Latest works</button>
+                    <h2 class="text-4xl font-extrabold">Our Latest Portfolio</h2>
+                    <p class="text-gray-600 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+        <!-- cards part -->
+                <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+                <!-- card 1 -->
+                    <div class="card card-compact border-2 bg-base-100 p-6 shadow-xl md:flex-row gap-6 md:col-span-2 lg:col-span-3 ">
+                        <img src="./assets/img1.png"alt="" />
+                      <div class="card-body">
+                        <h2 class="text-gray-700 font-extrabold text-lg">Commercial</h2>
+                        <p class="font-medium text-gray-600">The barn house captivates with its blend of rustic charm and modern. </p>
+                        <div >
+                          <button class="flex items-center gap-2 py-2 rounded-full border-none capitalize text-black text-xl font-semibold">View Details<div class="bg-arrow_bg rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+                        </div>
+                      </div>
+                    </div>
+                <!-- card 2 -->
+                    <div class="card card-compact border-2 bg-base-100 p-6 shadow-xl ">
+                        <img class="md:h-full" src="./assets/img2.png"alt="" />
+                    </div>
+                <!-- card 3 -->
+                    <div class="card card-compact border-2 bg-base-100 p-6 shadow-xl lg:order-3">
+                        <img class="md:h-full" src="./assets/img5.png"alt="" />
+                    </div>
+                <!-- card 4 -->
+                    <div class="card card-compact border-2 bg-base-100 p-6 shadow-xl md:flex-row gap-6 md:col-span-2 lg:order-2">
+                    <img src="./assets/img4.png"alt="" />
+                  <div class="card-body">
+                    <h2 class="text-gray-700 font-extrabold text-lg">Commercial</h2>
+                    <p class="font-medium text-gray-600">The barn house captivates with its blend of rustic charm and modern. </p>
+                    <div >
+                      <button class="flex items-center gap-2 py-2 rounded-full border-none capitalize text-black text-xl font-semibold">View Details<div class="bg-arrow_bg rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></div></button>
+                    </div>
+                  </div>
+                    </div>
+                <!-- card 5 -->
+                    <div class="card card-compact border-2 bg-base-100 p-6 shadow-xl md:order-1">
+                        <img class="md:h-full" src="./assets/img3.png"alt="" />
+                    </div>
+                <!-- card 6 -->
+                    <div class="lg:hidden card card-compact border-2 bg-base-100 p-6 shadow-xl">
+                        <img class="md:h-full" src="./assets/img5.png"alt="" />
+                    </div>
 
+                </div>
+            </div>
         </section>
 <!-- news section start here -->
         <section class="bg-main_bg py-24">
@@ -255,19 +304,19 @@
                 <form class="w-3/4 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                         <label for="name"></label>
-                        <input class="p-3 w-full rounded-full focus:outline-none required" type="text" placeholder="First Name*">
+                        <input class="p-3 w-full rounded-full focus:outline-none"required type="text" placeholder="First Name*">
                     </div>
                     <div>
                         <label for="name"></label>
-                        <input class="p-3 w-full rounded-full focus:outline-none required" type="text" placeholder="Last Name*">
+                        <input class="p-3 w-full rounded-full focus:outline-none"required type="text" placeholder="Last Name*">
                     </div>
                     <div>
                         <label for="phn"></label>
-                        <input class="p-3  w-full rounded-full focus:outline-none required" type="number" name="phn" id="phn" placeholder="Phone Number*">
+                        <input class="p-3  w-full rounded-full focus:outline-none"required type="number" name="phn" id="phn" placeholder="Phone Number*">
                     </div>
                     <div>
                         <label for="email"></label>
-                        <input class="p-3 w-full rounded-full focus:outline-none required" type="email" name="email" id="email" placeholder="Your Email*">
+                        <input class="p-3 w-full rounded-full focus:outline-none"required type="email" name="email" id="email" placeholder="Your Email*">
                     </div>
                     <textarea class="md:col-span-2 p-3 rounded-2xl focus:outline-none" name="msg-box" id="msg-box" cols="30" rows="10" placeholder="Write your message here"></textarea>
                     <button class="md:col-span-2 text-center py-2 px-4 rounded-full border-none capitalize text-black text-xl font-extrabold bg-arrow_bg">Send mail <span class="bg-black text-white rounded-full px-1"><i class="fa-solid fa-arrow-right -rotate-45"></i></span>
@@ -277,7 +326,7 @@
             </div>
         </section>
     </main>
-
+<!-- footer section start here -->
     <footer class="bg-black py-20">
         <div class="lg:max-w-screen-2xl w-11/12 mx-auto flex flex-col gap-20 items-center justify-between">
             <!-- footer start -->
